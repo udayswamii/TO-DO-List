@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.mdiv {
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  /* background-image: linear-gradient(360deg,black,darkred,red);   */
+  background-image: url(todo.jpg);
+  background-position: right bottom;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-form {
+
+  height: auto;
+  max-width: 400px;
+  width: 100%;
+  background-color: rgb(63, 60, 60);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+  opacity: 0.4;
+  color: rgb(184, 236, 11);
+
+}
+
+.taskDiv {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 30px;
+  position: relative;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 2px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: transparent;
+
+
+}
+
+
+button {
+  /* background-color: #dab315;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    opacity: 0.6;
+    transition: 0.3s;
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+    width: 70px;
+    cursor: pointer; */
+
+  width: 50px;
+  position: absolute;
+  padding: 5px 10px;
+  right: 0;
+  outline: none;
+  /* background-color: transparent; */
+  cursor: pointer;
+  border: #252525;
+  overflow: hidden;
+  border-radius: 30px;
+  /* //color:#fff; */
+  color: rgb(249, 124, 7);
+  transition: all 0.5s ease-in-out;
+  /* transform: skew(360deg); */
+
+}
+
+button:hover {
+  background-color: rgb(105, 71, 26);
+  /* opacity: 1;   */
+  box-shadow: 1px 1px 200px #100f0f,
+    /* color: #d02626; */
+    border: none;
+  color: #cd9c9c;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+ul {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-image: url("");
+}
